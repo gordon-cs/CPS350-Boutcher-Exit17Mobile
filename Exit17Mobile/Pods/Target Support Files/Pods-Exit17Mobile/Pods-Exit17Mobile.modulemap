@@ -1,0 +1,6 @@
+framework module Pods_Exit17Mobile {
+  umbrella header "Pods-Exit17Mobile-umbrella.h"
+
+  export *
+  module * { export * }
+}
