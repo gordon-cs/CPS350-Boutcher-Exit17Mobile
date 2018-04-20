@@ -7,15 +7,34 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+       
+        // [START firebase_configure]
+        // Use Firebase library to configure APIs
+        FirebaseApp.configure()
+        // [END firebase_configure]
+        
+        // Change iPhone status bar color
+        let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
+        if statusBar.responds(to:#selector(setter: UIView.backgroundColor)) {
+            statusBar.backgroundColor = UIColor(red: 59.0/255.0, green: 165.0/255.0, blue: 111.0/255.0, alpha: 1.0)
+        }
+        UIApplication.shared.statusBarStyle = .lightContent
+
+        // Change navigation bar color
+        let navigationBarAppearace = UINavigationBar.appearance()
+        
+        navigationBarAppearace.barTintColor = UIColor(red: 59.0/255.0, green: 165.0/255.0, blue: 111.0/255.0, alpha: 1.0)
+        navigationBarAppearace.tintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
+        
         return true
     }
 
