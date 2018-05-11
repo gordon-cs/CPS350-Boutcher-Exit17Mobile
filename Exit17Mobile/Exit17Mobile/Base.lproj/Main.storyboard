@@ -67,6 +67,7 @@
                                 <connections>
                                     <outlet property="thumbnail" destination="mi3-Jk-hyc" id="gK4-1c-0T4"/>
                                     <outlet property="videoTitle" destination="5SQ-MQ-4kG" id="lkx-XP-y3S"/>
+                                    <segue destination="TcQ-Rn-tog" kind="show" identifier="show" id="5NU-DQ-VTB"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -89,6 +90,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="DPP-IN-jXe">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" red="0.23137254900000001" green="0.64705882349999999" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" name="BrandonGrotesque-Black" family="Brandon Grotesque" pointSize="17"/>
@@ -104,12 +106,12 @@
             </objects>
             <point key="canvasLocation" x="341.60000000000002" y="-101.19940029985008"/>
         </scene>
-        <!--View Controller-->
+        <!--Video View Controller-->
         <scene sceneID="OjK-Mf-IqD">
             <objects>
-                <viewController id="TcQ-Rn-tog" sceneMemberID="viewController">
+                <viewController id="TcQ-Rn-tog" customClass="VideoViewController" customModule="Exit17Mobile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QB9-KH-eKz">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="y4J-2g-qMS"/>

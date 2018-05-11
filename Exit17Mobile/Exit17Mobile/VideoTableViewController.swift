@@ -72,7 +72,18 @@ UITableViewController {
         self.tableView.reloadData()
         }
     };
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "show" {
+            print("TEST")
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let controller = segue.destination as! VideoViewController
+                controller.video = videos[indexPath.row]
+            }
+        }
+    }
+    
+    // Reload data on page
     @objc func loadList(){
         //load data here
         self.tableView.reloadData()

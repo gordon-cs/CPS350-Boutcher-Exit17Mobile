@@ -1,16 +1,20 @@
 PODS:
   - Alamofire (4.7.1)
+  - YoutubeKit (0.1.2)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - YoutubeKit
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - YoutubeKit
 
 SPEC CHECKSUMS:
   Alamofire: 68d7d521118d49c615a8d2214d87cdf525599d30
+  YoutubeKit: 3a053ca2b2ab14c9b312febd3de044d7e017dc1d
 
-PODFILE CHECKSUM: e8428a032769b40181756021775409af7e2e12b0
+PODFILE CHECKSUM: 8c5f8d23f714d94ac08641b22444ca15ad7ba43a
 
 COCOAPODS: 1.5.0
