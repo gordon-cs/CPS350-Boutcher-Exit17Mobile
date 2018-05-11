@@ -12,8 +12,6 @@ import Alamofire
 class VideoTableViewController:
 UITableViewController {
     
-    @IBOutlet weak var tblView: UITableView!
-    
     // MARK: Properties
     var videos = [Video]()         // Empty video array
     var apiKey = "AIzaSyDUph9fo0Lp45SalvRaFTLJZ8REwHPfUk0"  // Api key for Youtube

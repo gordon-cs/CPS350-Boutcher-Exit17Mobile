@@ -9,7 +9,7 @@ target 'Exit17Mobile' do
 
   # Pods for Exit17Mobile
   pod 'Alamofire', '~> 4.7'
-  pod "youtube-ios-player-helper", "~> 0.1.4"
+
 end
 
 
