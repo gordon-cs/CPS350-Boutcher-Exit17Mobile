@@ -1,15 +1,19 @@
 //
 //  VideoTableViewCell.swift
-//  Exit17Mobile
+//  
 //
-//  Created by Bradley Boutcher on 4/20/18.
-//  Copyright © 2018 Bradley Boutcher. All rights reserved.
+//  Created by Bradley Boutcher on 5/10/18.
 //
 
 import UIKit
 
 class VideoTableViewCell: UITableViewCell {
 
+    //MARK: Properties
+
+    @IBOutlet weak var thumbnail: UIImageView!
+    @IBOutlet weak var videoTitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

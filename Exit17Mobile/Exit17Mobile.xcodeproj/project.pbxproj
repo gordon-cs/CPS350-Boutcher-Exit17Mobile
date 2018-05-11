@@ -8,27 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		1C11C1472088F61F00861362 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C11C1462088F61E00861362 /* GoogleService-Info.plist */; };
-		1C11C1492089ADD400861362 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C11C1482089ADD400861362 /* VideoTableViewCell.swift */; };
 		1C31C992207E939000CF16C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C31C991207E939000CF16C8 /* AppDelegate.swift */; };
-		1C31C994207E939000CF16C8 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C31C993207E939000CF16C8 /* FirstViewController.swift */; };
 		1C31C996207E939000CF16C8 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C31C995207E939000CF16C8 /* SecondViewController.swift */; };
 		1C31C999207E939000CF16C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C31C997207E939000CF16C8 /* Main.storyboard */; };
 		1C31C99B207E939200CF16C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C31C99A207E939200CF16C8 /* Assets.xcassets */; };
 		1C31C99E207E939200CF16C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C31C99C207E939200CF16C8 /* LaunchScreen.storyboard */; };
+		1CA5AE8120A5359D0057DBB8 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CA5AE8020A5359D0057DBB8 /* Video.swift */; };
+		1CA5AE8320A571080057DBB8 /* BrandonGrotesqueBlack.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CA5AE8220A571070057DBB8 /* BrandonGrotesqueBlack.ttf */; };
+		1CAE6A2F20A52337007A00B5 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE6A2E20A52337007A00B5 /* VideoTableViewCell.swift */; };
+		1CE7F31020A52ECE00E2B057 /* VideoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE7F30F20A52ECE00E2B057 /* VideoTableViewController.swift */; };
 		3D3701D52255F97DF6257354 /* Pods_Exit17Mobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744D85A6BF22FB2292E7451E /* Pods_Exit17Mobile.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C11C1462088F61E00861362 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		1C11C1482089ADD400861362 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		1C31C98E207E939000CF16C8 /* Exit17Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exit17Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C31C991207E939000CF16C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C31C993207E939000CF16C8 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		1C31C995207E939000CF16C8 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		1C31C998207E939000CF16C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C31C99A207E939200CF16C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C31C99D207E939200CF16C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C31C99F207E939200CF16C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CA5AE8020A5359D0057DBB8 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		1CA5AE8220A571070057DBB8 /* BrandonGrotesqueBlack.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = BrandonGrotesqueBlack.ttf; sourceTree = "<group>"; };
+		1CAE6A2E20A52337007A00B5 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = VideoTableViewCell.swift; path = "/Users/bradley/Google Drive/Documents/Mobile Computing/CPS350-Boutcher-Exit17Mobile/Exit17Mobile/Exit17Mobile/VideoTableViewCell.swift"; sourceTree = "<absolute>"; };
+		1CE7F30F20A52ECE00E2B057 /* VideoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewController.swift; sourceTree = "<group>"; };
 		2A410EBBD81B181B4ACC18FD /* Pods-Exit17Mobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exit17Mobile.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Exit17Mobile/Pods-Exit17Mobile.debug.xcconfig"; sourceTree = "<group>"; };
 		744D85A6BF22FB2292E7451E /* Pods_Exit17Mobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Exit17Mobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F94EAF5BBA4EBBAB0BA9F044 /* Pods-Exit17Mobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Exit17Mobile.release.xcconfig"; path = "Pods/Target Support Files/Pods-Exit17Mobile/Pods-Exit17Mobile.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,17 +80,27 @@
 		1C31C990207E939000CF16C8 /* Exit17Mobile */ = {
 			isa = PBXGroup;
 			children = (
+				1CA5AE8420A5711A0057DBB8 /* Fonts */,
 				1C11C1462088F61E00861362 /* GoogleService-Info.plist */,
 				1C31C991207E939000CF16C8 /* AppDelegate.swift */,
-				1C31C993207E939000CF16C8 /* FirstViewController.swift */,
 				1C31C995207E939000CF16C8 /* SecondViewController.swift */,
+				1CA5AE8020A5359D0057DBB8 /* Video.swift */,
+				1CAE6A2E20A52337007A00B5 /* VideoTableViewCell.swift */,
+				1CE7F30F20A52ECE00E2B057 /* VideoTableViewController.swift */,
 				1C31C997207E939000CF16C8 /* Main.storyboard */,
 				1C31C99A207E939200CF16C8 /* Assets.xcassets */,
 				1C31C99C207E939200CF16C8 /* LaunchScreen.storyboard */,
 				1C31C99F207E939200CF16C8 /* Info.plist */,
-				1C11C1482089ADD400861362 /* VideoTableViewCell.swift */,
 			);
 			path = Exit17Mobile;
+			sourceTree = "<group>";
+		};
+		1CA5AE8420A5711A0057DBB8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1CA5AE8220A571070057DBB8 /* BrandonGrotesqueBlack.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		8115C5567303DC92696892BE /* Frameworks */ = {
@@ -159,6 +173,7 @@
 			files = (
 				1C31C99E207E939200CF16C8 /* LaunchScreen.storyboard in Resources */,
 				1C11C1472088F61F00861362 /* GoogleService-Info.plist in Resources */,
+				1CA5AE8320A571080057DBB8 /* BrandonGrotesqueBlack.ttf in Resources */,
 				1C31C99B207E939200CF16C8 /* Assets.xcassets in Resources */,
 				1C31C999207E939000CF16C8 /* Main.storyboard in Resources */,
 			);
@@ -175,16 +190,12 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Exit17Mobile/Pods-Exit17Mobile-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/youtube-ios-player-helper/youtube_ios_player_helper.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/youtube_ios_player_helper.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -217,9 +228,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C31C996207E939000CF16C8 /* SecondViewController.swift in Sources */,
-				1C11C1492089ADD400861362 /* VideoTableViewCell.swift in Sources */,
+				1CAE6A2F20A52337007A00B5 /* VideoTableViewCell.swift in Sources */,
+				1CE7F31020A52ECE00E2B057 /* VideoTableViewController.swift in Sources */,
 				1C31C992207E939000CF16C8 /* AppDelegate.swift in Sources */,
-				1C31C994207E939000CF16C8 /* FirstViewController.swift in Sources */,
+				1CA5AE8120A5359D0057DBB8 /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,10 +379,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QR3HWHQHQE;
 				INFOPLIST_FILE = Exit17Mobile/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Bradley-Boutcher.Exit17Mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -386,10 +395,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QR3HWHQHQE;
 				INFOPLIST_FILE = Exit17Mobile/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Bradley-Boutcher.Exit17Mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

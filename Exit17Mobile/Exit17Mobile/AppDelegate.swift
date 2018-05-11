@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,11 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-       
-        // [START firebase_configure]
-        // Use Firebase library to configure APIs
-        FirebaseApp.configure()
-        // [END firebase_configure]
         
         // Change iPhone status bar color
         let statusBar: UIView = UIApplication.shared.value(forKey: "statusBar") as! UIView
