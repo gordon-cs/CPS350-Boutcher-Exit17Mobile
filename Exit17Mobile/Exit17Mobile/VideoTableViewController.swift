@@ -24,14 +24,16 @@ UITableViewController {
         
         // Use a loop to go through all video items.
         for item in items {
-            
+            print(item)
             let playlistSnippetDict = (item as Dictionary<NSObject, AnyObject>)["snippet" as NSObject] as! Dictionary<NSObject, AnyObject>
             
             let title = playlistSnippetDict["title" as NSObject]
-            let thumbnail = ((playlistSnippetDict["thumbnails" as NSObject] as! Dictionary<NSObject, AnyObject>)["high" as NSObject] as! Dictionary<NSObject, AnyObject>)["url" as NSObject]
+            let description = playlistSnippetDict["description" as NSObject]
+            let thumbnail = ((playlistSnippetDict["thumbnails" as NSObject] as! Dictionary<NSObject, AnyObject>)["default" as NSObject] as! Dictionary<NSObject, AnyObject>)["url" as NSObject]
             let videoId = (playlistSnippetDict["resourceId" as NSObject] as! Dictionary<NSObject, AnyObject>)["videoId" as NSObject]
+        
             // Create a new video object
-            let newVideo = Video(url: thumbnail as! String, title: title as! String, videoID: videoId as! String)
+            let newVideo = Video(url: thumbnail as! String, title: title as! String, description: description as! String, videoID: videoId as! String)
             
             // Append the desiredPlaylistItemDataDict dictionary to the videos array.
             videos.append(newVideo!)
