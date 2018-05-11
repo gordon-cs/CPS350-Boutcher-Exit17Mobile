@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1C11C1472088F61F00861362 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C11C1462088F61E00861362 /* GoogleService-Info.plist */; };
+		1C23B48720A60019002F90DA /* SocialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C23B48620A60019002F90DA /* SocialViewController.swift */; };
 		1C31C992207E939000CF16C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C31C991207E939000CF16C8 /* AppDelegate.swift */; };
 		1C31C999207E939000CF16C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C31C997207E939000CF16C8 /* Main.storyboard */; };
 		1C31C99B207E939200CF16C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C31C99A207E939200CF16C8 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		1C11C1462088F61E00861362 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1C23B48620A60019002F90DA /* SocialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialViewController.swift; sourceTree = "<group>"; };
 		1C31C98E207E939000CF16C8 /* Exit17Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exit17Mobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C31C991207E939000CF16C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C31C998207E939000CF16C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				1C31C99C207E939200CF16C8 /* LaunchScreen.storyboard */,
 				1C31C99F207E939200CF16C8 /* Info.plist */,
 				1CB8012220A57CB000418E2C /* VideoViewController.swift */,
+				1C23B48620A60019002F90DA /* SocialViewController.swift */,
 			);
 			path = Exit17Mobile;
 			sourceTree = "<group>";
@@ -228,6 +231,7 @@
 				1CAE6A2F20A52337007A00B5 /* VideoTableViewCell.swift in Sources */,
 				1CE7F31020A52ECE00E2B057 /* VideoTableViewController.swift in Sources */,
 				1C31C992207E939000CF16C8 /* AppDelegate.swift in Sources */,
+				1C23B48720A60019002F90DA /* SocialViewController.swift in Sources */,
 				1CB8012320A57CB000418E2C /* VideoViewController.swift in Sources */,
 				1CA5AE8120A5359D0057DBB8 /* Video.swift in Sources */,
 			);
@@ -377,7 +381,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QR3HWHQHQE;
 				INFOPLIST_FILE = Exit17Mobile/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Bradley-Boutcher.Exit17Mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -393,7 +400,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = QR3HWHQHQE;
 				INFOPLIST_FILE = Exit17Mobile/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Bradley-Boutcher.Exit17Mobile";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

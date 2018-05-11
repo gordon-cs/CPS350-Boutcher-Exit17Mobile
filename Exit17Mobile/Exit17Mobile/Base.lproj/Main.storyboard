@@ -79,12 +79,12 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kr8-sK-jzh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3159.1999999999998" y="-101.19940029985008"/>
+            <point key="canvasLocation" x="2030" y="-101"/>
         </scene>
         <!--SOCIAL MEDIA-->
         <scene sceneID="Usb-oG-7bF">
             <objects>
-                <viewController title="SOCIAL MEDIA" id="TRW-Lb-WEu" sceneMemberID="viewController">
+                <viewController title="SOCIAL MEDIA" id="TRW-Lb-WEu" customClass="SocialViewController" customModule="Exit17Mobile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PQ5-sV-ALl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -101,15 +101,62 @@
                                     <navigationItem title="SOCIAL MEDIA" id="Y2w-7l-Eqh"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Irr-a0-Blq">
+                                <rect key="frame" x="44" y="102" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="insta"/>
+                                <connections>
+                                    <action selector="openInsta:" destination="TRW-Lb-WEu" eventType="touchUpInside" id="Fba-7U-jpr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YCd-NE-Tda">
+                                <rect key="frame" x="44" y="238" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="twitter"/>
+                                <connections>
+                                    <action selector="openTwitter:" destination="TRW-Lb-WEu" eventType="touchUpInside" id="aAC-mc-aCH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7lE-Fe-Siw">
+                                <rect key="frame" x="44" y="378" width="100" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="youtube"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shout at us on Twitter!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ch7-FO-xze">
+                                <rect key="frame" x="181" y="278" width="173" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Follow us on Instagram!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dpb-wc-ZXW">
+                                <rect key="frame" x="181" y="142" width="181" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Like us on Facebook!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDi-ul-r1A">
+                                <rect key="frame" x="181" y="418" width="161" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="mn5-Y3-LNm"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Social" image="3893-200" id="FYA-d4-PS9"/>
+                    <connections>
+                        <outlet property="facebookButton" destination="7lE-Fe-Siw" id="Dvf-nd-7wi"/>
+                        <outlet property="instaButton" destination="Irr-a0-Blq" id="8cw-RE-6Hx"/>
+                        <outlet property="twitterButton" destination="YCd-NE-Tda" id="Cpf-LZ-ZaS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AhI-Ao-yNa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2220" y="680"/>
+            <point key="canvasLocation" x="1126" y="-101"/>
         </scene>
         <!--Video View Controller-->
         <scene sceneID="rZL-E1-6jF">
@@ -130,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="n05-3f-2ti" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4116" y="-101.19940029985008"/>
+            <point key="canvasLocation" x="3052" y="-101"/>
         </scene>
         <!--LATEST VIDEOS-->
         <scene sceneID="iO0-tP-nOu">
@@ -149,7 +196,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mkR-iQ-JOT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="-101"/>
+            <point key="canvasLocation" x="1126" y="-966"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HrJ-zz-Idv">
@@ -173,11 +220,14 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="enq-jo-fTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2220" y="-101.19940029985008"/>
+            <point key="canvasLocation" x="2030" y="-965"/>
         </scene>
     </scenes>
     <resources>
         <image name="3893-200" width="44" height="44"/>
         <image name="icon_transparent" width="2028" height="4303"/>
+        <image name="insta" width="256" height="256"/>
+        <image name="twitter" width="512" height="512"/>
+        <image name="youtube" width="2000" height="2000"/>
     </resources>
 </document>
