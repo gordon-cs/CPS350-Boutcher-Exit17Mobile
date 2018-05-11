@@ -29,7 +29,7 @@ UITableViewController {
             
             let title = playlistSnippetDict["title" as NSObject]
             let description = playlistSnippetDict["description" as NSObject]
-            let thumbnail = ((playlistSnippetDict["thumbnails" as NSObject] as! Dictionary<NSObject, AnyObject>)["default" as NSObject] as! Dictionary<NSObject, AnyObject>)["url" as NSObject]
+            let thumbnail = ((playlistSnippetDict["thumbnails" as NSObject] as! Dictionary<NSObject, AnyObject>)["medium" as NSObject] as! Dictionary<NSObject, AnyObject>)["url" as NSObject]
             let videoId = (playlistSnippetDict["resourceId" as NSObject] as! Dictionary<NSObject, AnyObject>)["videoId" as NSObject]
         
             // Create a new video object
@@ -77,7 +77,6 @@ UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "show" {
-            print("TEST")
             if let indexPath = self.tableView.indexPathForSelectedRow {
                 let controller = segue.destination as! VideoViewController
                 controller.video = videos[indexPath.row]

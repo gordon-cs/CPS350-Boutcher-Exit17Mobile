@@ -23,6 +23,9 @@ class VideoViewController: UIViewController{
         let request = NSURLRequest(url: url! as URL)
         
         webView.load(request as URLRequest)
+        if webView.isLoading {
+            print("loading...")
+        }
     }
 
     
