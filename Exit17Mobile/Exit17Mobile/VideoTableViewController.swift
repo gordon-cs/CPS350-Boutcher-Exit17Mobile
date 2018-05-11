@@ -12,8 +12,6 @@ import Alamofire
 class VideoTableViewController:
 UITableViewController {
     
-    @IBOutlet weak var tblView: UITableView!
-    
     // MARK: Properties
     var videos = [Video]()         // Empty video array
     var apiKey = "AIzaSyDUph9fo0Lp45SalvRaFTLJZ8REwHPfUk0"  // Api key for Youtube
@@ -26,14 +24,16 @@ UITableViewController {
         
         // Use a loop to go through all video items.
         for item in items {
-            
+            print(item)
             let playlistSnippetDict = (item as Dictionary<NSObject, AnyObject>)["snippet" as NSObject] as! Dictionary<NSObject, AnyObject>
             
             let title = playlistSnippetDict["title" as NSObject]
-            let thumbnail = ((playlistSnippetDict["thumbnails" as NSObject] as! Dictionary<NSObject, AnyObject>)["high" as NSObject] as! Dictionary<NSObject, AnyObject>)["url" as NSObject]
+            let description = playlistSnippetDict["description" as NSObject]
+            let thumbnail = ((playlistSnippetDict["thumbnails" as NSObject] as! Dictionary<NSObject, AnyObject>)["medium" as NSObject] as! Dictionary<NSObject, AnyObject>)["url" as NSObject]
             let videoId = (playlistSnippetDict["resourceId" as NSObject] as! Dictionary<NSObject, AnyObject>)["videoId" as NSObject]
+        
             // Create a new video object
-            let newVideo = Video(url: thumbnail as! String, title: title as! String, videoID: videoId as! String)
+            let newVideo = Video(url: thumbnail as! String, title: title as! String, description: description as! String, videoID: videoId as! String)
             
             // Append the desiredPlaylistItemDataDict dictionary to the videos array.
             videos.append(newVideo!)
@@ -74,7 +74,17 @@ UITableViewController {
         self.tableView.reloadData()
         }
     };
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "show" {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                let controller = segue.destination as! VideoViewController
+                controller.video = videos[indexPath.row]
+            }
+        }
+    }
+    
+    // Reload data on page
     @objc func loadList(){
         //load data here
         self.tableView.reloadData()

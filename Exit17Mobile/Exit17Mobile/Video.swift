@@ -14,10 +14,11 @@ class Video {
     // MARK: Properties
     var thumbnail : UIImage? = nil
     var title: String
+    var description: String
     var videoID: String
     
     //MARK: Initialization
-    init?(url: String, title: String, videoID: String) {
+    init?(url: String, title: String, description: String, videoID: String) {
         // Initialization should fail if there is no name or if the rating is negative
         if title.isEmpty || videoID.isEmpty {
             return nil
@@ -26,6 +27,7 @@ class Video {
         // Initialize stored properties
         self.title = title
         self.videoID = videoID
+        self.description = description
         downloadImage(url: URL(string: url)!)
     }
 
